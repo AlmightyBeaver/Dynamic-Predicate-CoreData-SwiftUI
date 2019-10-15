@@ -112,7 +112,6 @@
 				8A7011A9235623D5006C956F /* ListDynamicPredicate.swift */,
 				8A7011A323561B60006C956F /* PersonRow.swift */,
 				8A7011AD23562E23006C956F /* ButtonsPredicateChange.swift */,
-				8A7011AC23562433006C956F /* SubViews */,
 				8A7011AB23562406006C956F /* ModalViews */,
 			);
 			path = Views;
@@ -125,13 +124,6 @@
 				8A7011A123561B3A006C956F /* PersonDetail.swift */,
 			);
 			path = ModalViews;
-			sourceTree = "<group>";
-		};
-		8A7011AC23562433006C956F /* SubViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Dynamic Predicate CoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = 62GJNTNB5W;
 				ENABLE_PREVIEWS = YES;
@@ -373,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Dynamic Predicate CoreData/Preview Content\"";
 				DEVELOPMENT_TEAM = 62GJNTNB5W;
 				ENABLE_PREVIEWS = YES;

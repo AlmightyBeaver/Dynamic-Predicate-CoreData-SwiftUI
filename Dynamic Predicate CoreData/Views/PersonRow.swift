@@ -17,7 +17,6 @@ struct PersonRow: View {
     var body: some View {
         HStack{
             Button(action: {
-                print("Row tapped")
                 self.showModal = true
                 self.selectedModal = 2
                 self.person.isSelected = true
