@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15400" systemVersion="19A583" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Appsettings" representedClassName="Appsettings" syncable="YES" codeGenerationType="class">
+        <attribute name="predicateFriendsNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="person" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Person" inverseName="appSettings" inverseEntity="Person"/>
+    </entity>
+    <entity name="Friend" representedClassName="Friend" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="person" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Person" inverseName="friends" inverseEntity="Person"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="isSelected" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="appSettings" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Appsettings" inverseName="person" inverseEntity="Appsettings"/>
+        <relationship name="friends" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Friend" inverseName="person" inverseEntity="Friend"/>
+    </entity>
+    <elements>
+        <element name="Appsettings" positionX="-36" positionY="9" width="128" height="73"/>
+        <element name="Friend" positionX="-54" positionY="-9" width="128" height="88"/>
+        <element name="Person" positionX="-63" positionY="-18" width="128" height="118"/>
+    </elements>
+</model>

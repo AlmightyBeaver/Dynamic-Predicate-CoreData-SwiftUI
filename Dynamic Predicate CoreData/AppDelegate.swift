@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let firstStartStatus = UserDefaults.standard.bool(forKey: "firstStartComplete")
+        if firstStartStatus == false {
+            // do when app starts the first time
+            UserDefaults.standard.set(true, forKey: "firstStartComplete")
+            CoreDataManager.defaults.createAppsetting()
+            print("First app start complete\n App settings created")
+        }
+        
         return true
     }
 

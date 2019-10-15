@@ -14,6 +14,14 @@
 		8A70118E23561ADB006C956F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A70118D23561ADB006C956F /* Assets.xcassets */; };
 		8A70119123561ADB006C956F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A70119023561ADB006C956F /* Preview Assets.xcassets */; };
 		8A70119423561ADB006C956F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A70119223561ADB006C956F /* LaunchScreen.storyboard */; };
+		8A70119D23561AFB006C956F /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70119C23561AFB006C956F /* CoreDataManager.swift */; };
+		8A7011A023561B2F006C956F /* AddPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A70119F23561B2F006C956F /* AddPerson.swift */; };
+		8A7011A223561B3A006C956F /* PersonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7011A123561B3A006C956F /* PersonDetail.swift */; };
+		8A7011A423561B60006C956F /* PersonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7011A323561B60006C956F /* PersonRow.swift */; };
+		8A7011A623561E18006C956F /* CoreData+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7011A523561E18006C956F /* CoreData+Extension.swift */; };
+		8A7011A8235623C8006C956F /* ListStaticPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7011A7235623C8006C956F /* ListStaticPredicate.swift */; };
+		8A7011AA235623D5006C956F /* ListDynamicPredicate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7011A9235623D5006C956F /* ListDynamicPredicate.swift */; };
+		8A7011AE23562E23006C956F /* ButtonsPredicateChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7011AD23562E23006C956F /* ButtonsPredicateChange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		8A70119023561ADB006C956F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8A70119323561ADB006C956F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A70119523561ADB006C956F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A70119C23561AFB006C956F /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8A70119F23561B2F006C956F /* AddPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPerson.swift; sourceTree = "<group>"; };
+		8A7011A123561B3A006C956F /* PersonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetail.swift; sourceTree = "<group>"; };
+		8A7011A323561B60006C956F /* PersonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRow.swift; sourceTree = "<group>"; };
+		8A7011A523561E18006C956F /* CoreData+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreData+Extension.swift"; sourceTree = "<group>"; };
+		8A7011A7235623C8006C956F /* ListStaticPredicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStaticPredicate.swift; sourceTree = "<group>"; };
+		8A7011A9235623D5006C956F /* ListDynamicPredicate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDynamicPredicate.swift; sourceTree = "<group>"; };
+		8A7011AD23562E23006C956F /* ButtonsPredicateChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsPredicateChange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,13 @@
 		8A70118323561AD9006C956F /* Dynamic Predicate CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				8A70119B23561AE6006C956F /* CoreData */,
+				8A70119E23561B15006C956F /* Views */,
 				8A70118423561AD9006C956F /* AppDelegate.swift */,
 				8A70118623561AD9006C956F /* SceneDelegate.swift */,
-				8A70118B23561AD9006C956F /* ContentView.swift */,
 				8A70118D23561ADB006C956F /* Assets.xcassets */,
 				8A70119223561ADB006C956F /* LaunchScreen.storyboard */,
 				8A70119523561ADB006C956F /* Info.plist */,
-				8A70118823561AD9006C956F /* Dynamic_Predicate_CoreData.xcdatamodeld */,
 				8A70118F23561ADB006C956F /* Preview Content */,
 			);
 			path = "Dynamic Predicate CoreData";
@@ -76,6 +92,46 @@
 				8A70119023561ADB006C956F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A70119B23561AE6006C956F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8A70118823561AD9006C956F /* Dynamic_Predicate_CoreData.xcdatamodeld */,
+				8A70119C23561AFB006C956F /* CoreDataManager.swift */,
+				8A7011A523561E18006C956F /* CoreData+Extension.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		8A70119E23561B15006C956F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8A70118B23561AD9006C956F /* ContentView.swift */,
+				8A7011A7235623C8006C956F /* ListStaticPredicate.swift */,
+				8A7011A9235623D5006C956F /* ListDynamicPredicate.swift */,
+				8A7011A323561B60006C956F /* PersonRow.swift */,
+				8A7011AD23562E23006C956F /* ButtonsPredicateChange.swift */,
+				8A7011AC23562433006C956F /* SubViews */,
+				8A7011AB23562406006C956F /* ModalViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8A7011AB23562406006C956F /* ModalViews */ = {
+			isa = PBXGroup;
+			children = (
+				8A70119F23561B2F006C956F /* AddPerson.swift */,
+				8A7011A123561B3A006C956F /* PersonDetail.swift */,
+			);
+			path = ModalViews;
+			sourceTree = "<group>";
+		};
+		8A7011AC23562433006C956F /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +206,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A70118523561AD9006C956F /* AppDelegate.swift in Sources */,
+				8A7011A423561B60006C956F /* PersonRow.swift in Sources */,
+				8A7011A223561B3A006C956F /* PersonDetail.swift in Sources */,
+				8A7011A8235623C8006C956F /* ListStaticPredicate.swift in Sources */,
+				8A7011AA235623D5006C956F /* ListDynamicPredicate.swift in Sources */,
 				8A70118A23561AD9006C956F /* Dynamic_Predicate_CoreData.xcdatamodeld in Sources */,
+				8A7011A023561B2F006C956F /* AddPerson.swift in Sources */,
 				8A70118C23561AD9006C956F /* ContentView.swift in Sources */,
+				8A70119D23561AFB006C956F /* CoreDataManager.swift in Sources */,
+				8A7011AE23562E23006C956F /* ButtonsPredicateChange.swift in Sources */,
 				8A70118723561AD9006C956F /* SceneDelegate.swift in Sources */,
+				8A7011A623561E18006C956F /* CoreData+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
