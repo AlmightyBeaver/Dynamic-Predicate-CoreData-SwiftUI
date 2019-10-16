@@ -41,7 +41,7 @@ struct ContentView: View {
                 
             } //end VStack
                 
-                .sheet(isPresented: $showModal, onDismiss: {print("dismissed")}, content: {
+                .sheet(isPresented: $showModal, content: {
                     if self.selectedModal == 1{
                         NavigationView{
                             AddPerson(showModal: self.$showModal)
@@ -53,7 +53,7 @@ struct ContentView: View {
                                 .environment(\.managedObjectContext, self.managedObjectContext)
                         }
                     }
-                }).onDisappear(perform: {print("Ddsfdf")})
+                })
                 
                 
                 .navigationBarItems(trailing:
