@@ -161,13 +161,15 @@ class CoreDataManager {
     //MARK: Delete
     
     func removePerson(at offsets: IndexSet) {
-        // method will only be executed if there are persons
-        let persons = loadAllPersons()!
-        for index in offsets {
-            let person = persons[index]
-            myContext.delete(person)
+        if let persons = loadAllPersons(){
+            for index in offsets {
+                let person = persons[index]
+                myContext.delete(person)
+            }
+            save()
+        }else {
+            print("No person deleted")
         }
-        save()
     }
     
     
